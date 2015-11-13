@@ -1,0 +1,42 @@
+
+{
+  "name": "php-tester",
+  "version": "1.0.1",
+  "description": "Unit test PHP files",
+  "homepage": "http://jsphp.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsphpio/php-tester.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start tests/karma.conf.js"
+  },
+  "author": {
+    "name": "Andrew Wilkes",
+    "email": "andrew.wilkes@jsphp.io"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.14",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.18"
+  },
+  "keywords": [
+    "php",
+    "unit",
+    "testing",
+    "karma",
+    "jasmine",
+    "runner",
+    "js",
+    "javascript",
+    "test"
+  ],
+  "files": [
+    "src/",
+    "tests/"
+  ]
+}
