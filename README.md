@@ -35,4 +35,4 @@ Run the tests from the command line with:
 
 `npm test`
 
-Read more at the [Home Page](http:://jsphp.io/php-unit-testing.php)
+Read more at the [Home Page](http://jsphp.io/php-unit-testing.php)
