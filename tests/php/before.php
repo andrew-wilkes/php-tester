@@ -4,14 +4,19 @@ include 'config.php';
 
 include 'testerClass.php';
 
+spl_autoload_register('mock_class_autoloader');
+
+register_shutdown_function('shutdown_handler');
+
+ob_start();
+
+
+/* The callback functions that are referenced above */
+
 function mock_class_autoloader($class)
 {
    	include MOCK_PATH . $class . '.php';
 }
-
-spl_autoload_register('mock_class_autoloader');
-
-register_shutdown_function('shutdown_handler');
 
 function shutdown_handler()
 {
@@ -26,5 +31,3 @@ function shutdown_handler()
     }
 
 }
-
-ob_start();

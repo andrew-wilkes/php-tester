@@ -1,7 +1,7 @@
 
 {
   "name": "php-tester",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Unit test PHP files",
   "homepage": "http://jsphp.io/",
   "repository": {
