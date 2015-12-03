@@ -90,7 +90,7 @@ class Tester
 			return $js;
 	}
 
-	public static function it($should, $expect, $to_equal = '')
+	public static function it($should, $expect, $to_equal = 'something other than this')
 	{
 		return "it('$should', function() { expect('$expect').toEqual('$to_equal'); });\n";
 	}

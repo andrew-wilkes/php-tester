@@ -32,6 +32,12 @@ Tester::describe('Example Tests',
 	    	Tester::func('negative'),
 	    	'true' // Demonstrate a failure
 	    )
+	).
+	Tester::describe('Demo of auto-loading of a Mocked class',
+	    Tester::it('should say hello.',
+	    	Tester::func('runAmock', 'hello!'), // Here we are passing a parameter to a method
+	    	'hello!'
+	    )
 	),
 	true
 );
@@ -63,4 +69,9 @@ function positive()
 function negative()
 {
 	return Tester::bool_to_string(Example::positive(-1));
+}
+
+function runAmock($msg)
+{
+	Mock::say_something($msg);
 }
