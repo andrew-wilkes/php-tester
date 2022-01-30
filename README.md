@@ -35,5 +35,3 @@ Example PHP test specs are in the `tests/php/specs/` folder.
 Run the tests from the command line with:
 
 `npm test`
-
-Read more at the [Home Page](http://backendcoder.com/php-unit-testing-with-karma-and-jasmine)
